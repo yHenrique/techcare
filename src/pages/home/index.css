@@ -1,0 +1,92 @@
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: black;
+    height: 150px;
+    padding: 50px;
+}
+
+img {
+    max-width: fit-content;
+    height: auto;
+}
+
+h1 {
+    color: white;
+}
+
+nav {
+    display: flex;
+    border: 1px solid white;
+    /* flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start; */
+}
+
+.banner {
+    background-color: black;
+    display: flex;
+    /* flex-direction: row; */
+    /* justify-content: flex-end; */
+}
+
+.banner>p {
+    color: dodgerblue;
+}
+
+.banner h1 {
+    color: white;
+}
+
+.banner a {
+    background-color: black;
+    border: 1px solid white;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    background-color: rgba(240, 248, 255, 0.979);
+    height: 500px;
+}
+
+.services p {
+    margin: 50px;
+    color: dodgerblue;
+    font-weight: 700;
+}
+
+.services h2 {}
+
+.cards li {
+    list-style-type: '✓  ';
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: white;
+    width: 250px;
+    margin: 20px;
+    padding: 10px;
+    /* align-content: stretch; */
+    gap: 20px;
+    /* flex-wrap: wrap; */
+}
+
+.card p {
+    font-size: 18px;
+}
+
+footer {
+    background-color: black;
+}
+
+footer p {
+    color: white;
+}

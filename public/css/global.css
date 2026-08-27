@@ -1,0 +1,15 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+body {
+    font-family: 'Oswald';
+}
+
+a,
+a:active,
+a:visited {
+    color: white;
+    text-decoration: none;
+}
