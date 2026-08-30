@@ -1,3 +1,42 @@
+h1 {
+    color: white;
+}
+
+h2 {
+    font-size: 32px;
+    font-weight: 500;
+}
+
+h3 {
+    color: dodgerblue;
+}
+
+p {
+    font-size: 20px;
+}
+
+button {
+    cursor: pointer;
+    background-color: dodgerblue;
+    color: white;
+    border-style: none;
+    border-radius: 3px;
+    font-size: 16px;
+    padding: 10px 20px;
+    font-weight: 300;
+}
+
+button:hover {
+    background-color: #0056b3;
+    /* transform: translateY(-1px); */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+button:active {
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
 nav {
     background-color: black;
     display: flex;
@@ -5,6 +44,14 @@ nav {
     justify-content: space-evenly;
     align-items: center;
     padding: 24px 0px;
+}
+
+footer {
+    background-color: black;
+}
+
+footer p {
+    color: white;
 }
 
 .logo {
@@ -15,10 +62,6 @@ nav img {
     max-width: fit-content;
     height: 50px;
     margin-left: 50px;
-}
-
-nav h1 {
-    color: white;
 }
 
 nav li {
@@ -32,70 +75,64 @@ nav li a {
     font-weight: 300;
 }
 
-nav button {
-    background-color: dodgerblue;
-    border-style: none;
-    color: white;
-    border-radius: 3px;
-    font-size: 18px;
-    padding: 10px 20px;
-    font-weight: 300;
-}
-
-.banner {
+.about-section {
     background-color: black;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     padding: 50px;
 }
 
-.banner-text>p {
-    color: dodgerblue;
-    font-size: 24px;
-    display: inline-flex;
-}
-
-.banner-text h1 {
-    color: white;
-    font-size: 50px;
-}
-
-.banner-text button {
+.about-text {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    border: none;
-    background-color: dodgerblue;
-    color: white;
-    font-size: 18px;
-    padding: 10px 20px;
-    border-radius: 3px;
+    justify-content: space-evenly;
+    width: 900px;
+    padding-right: 100px;
 }
 
-.cards {
+.about-text p {
+    color: white;
+}
+
+.about-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.about-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-top: 100px;
+}
+
+.about-footer p {
+    list-style: none;
+    display: inline-block;
+    margin-right: 0px;
+}
+
+.services-section {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    background-color: rgba(240, 248, 255, 0.979);
+    background-color: rgba(247, 247, 247, 0.979);
     height: 500px;
 }
 
-.services {
-    margin-right: 200px;
+.services-text h3 {
+    margin: 50px 0px 0px 100px;
 }
 
-.services p {
-    margin: 50px;
-    color: dodgerblue;
-    font-weight: 700;
+.services-text h2 {
+    margin: 20px 0px 0px 100px;
 }
 
-.services h2 {
-    /* font-size: 40px; */
-}
-
-.card {
+.services-cards {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -105,67 +142,107 @@ nav button {
     margin: 20px;
     padding: 20px;
     border-radius: 3px;
-    /* align-content: stretch; */
     gap: 25px;
-    /* flex-wrap: wrap; */
 }
 
-.card img {
+.services-cards img {
     display: flex;
     width: 30%;
     height: auto;
 }
 
-.card ul {
+.services-cards h3 {
+    color: black;
+}
+
+.services-cards ul {
     padding-left: 20px;
 }
 
-.card li {
+.services-cards li {
     list-style-type: '✓  ';
     color: mediumseagreen;
 }
 
-.card p {
+.services-cards p {
     font-size: 18px;
 }
 
-.qualities_card {
+.qualities-section {
     display: flex;
     flex-direction: row;
     justify-content: center;
     height: 500px;
 }
 
-.qualities_card img {
+.qualities-text {
     display: flex;
-    width: 30%;
-    height: 60%;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
-.qualities_cards {
+.qualities-cards {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    padding: 200px 100px 0px 0px;
-    gap: 20px;
 }
 
-.qualities_cards img {
+/* .qualities-text h3 {
+    margin: 50px 0px 0px 100px;
+}
+
+.qualities-text h2 {
+    margin: 20px 0px 0px 100px;
+} */
+
+/* .qualities-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 100px 100px 0px 0px;
+    gap: 10px;
+} */
+
+/* .qualities-cards img {
     display: flex;
     width: 40%;
     height: auto;
-}
-
-.qualities_cards>p:first-of-type {
+} */
+/* 
+.qualities-cards>p:first-of-type {
     font-size: 18px;
     font-weight: 500;
+} */
+
+/* .qualities-section img {
+    display: flex;
+    width: 35%;
+    height: 70%;
+} */
+
+.contacts-section {
+    background-color: aliceblue;
+    margin: 0px 100px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 200px;
+    padding: 30px 0px 30px 200px;
 }
 
-footer {
-    background-color: black;
+.contacts-text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
-footer p {
-    color: white;
+.contacts-section li {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
 }
+
