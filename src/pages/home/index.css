@@ -28,7 +28,7 @@ button {
 
 button:hover {
     background-color: #0056b3;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.15);
 }
 
 button:active {
@@ -97,7 +97,7 @@ nav li a {
     flex-direction: row;
     justify-content: space-evenly;
     padding: 3rem 0;
-    width: 119rem;
+    width: 100%;
 }
 
 .about-text {
@@ -136,7 +136,7 @@ nav li a {
     justify-content: center;
     background-color: rgba(247, 247, 247, 0.979);
     height: 30rem;
-    width: 119rem;
+    width: 100%;
     gap: 1rem;
 }
 
@@ -183,7 +183,7 @@ nav li a {
     flex-direction: row;
     justify-content: center;
     height: 30rem;
-    width: 119rem;
+    width: 100%;
     gap: 24em;
 }
 
