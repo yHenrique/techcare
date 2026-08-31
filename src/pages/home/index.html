@@ -49,14 +49,10 @@
                         <img src="/public/assets/images/05-lightning.svg">
                         <p>Atendimento Rápido</p>
                     </li>
-                </ul>
-                <ul>
                     <li>
                         <img src="/public/assets/images/06-shield.svg">
                         <p>Serviço com Garantia</p>
                     </li>
-                </ul>
-                <ul>
                     <li>
                         <img src="/public/assets/images/07-chip.svg">
                         <p>Peças de Qualidade</p>
@@ -70,7 +66,7 @@
     <div class="services-section">
         <div class="services-text">
             <h3>NOSSOS SERVIÇOS</h3>
-            <h2>Soluções completas para o seu computador</h2>
+            <h2>Soluções completas para o seu computador.</h2>
         </div>
         <div class="services-cards">
             <img src="/public/assets/images/02-wrench.svg">
@@ -142,28 +138,16 @@
                         <p>Experiência</p>
                         <p>Anos de experiência no mercado garantindo o melhor serviço.</p>
                     </li>
-                </ul>
-            </div>
-            <div class="qualities-cards">
-                <ul>
                     <li>
                         <img src="/public/assets/images/09-thumbs-up.svg">
                         <p>Transparência</p>
                         <p>Orçamento justo e sem surpresas. Você aprova antes do serviço.</p>
                     </li>
-                </ul>
-            </div>
-            <div class="qualities-cards">
-                <ul>
                     <li>
                         <img src="/public/assets/images/06-shield.svg">
                         <p>Garantia</p>
                         <p>Todos os serviços com garantia para sua total tranquilidade.</p>
                     </li>
-                </ul>
-            </div>
-            <div class="qualities-cards">
-                <ul>
                     <li>
                         <img src="/public/assets/images/10-headset.svg">
                         <p>Suporte</p>
@@ -171,65 +155,94 @@
                     </li>
                 </ul>
             </div>
-            <img src="/public/assets/images/maintenance-photo.png">
         </div>
+        <img src="/public/assets/images/maintenance-photo.png">
     </div>
 
     <div class="contacts-section">
         <div class="contacts-text">
             <h2>Pronto para melhorar seu computador?</h2>
             <p>Entre em contato e solicite um orçamento sem compromisso.</p>
-            <div>
-                <button href="#">Solicitar Orçamento
-                </button>
+            <div class="contacts-cards">
+                <ul>
+                    <li>
+                        <img src="/public/assets/images/18-phone.svg">
+                        <p>WhatsApp:</p>
+                        <p>(11) 99999-9999</p>
+                    </li>
+                    <li>
+                        <img src="/public/assets/images/13-email.svg">
+                        <p>E-mail:</p>
+                        <p>contato@techcare.com.br</p>
+                    </li>
+                    <li>
+                        <img src="/public/assets/images/14-location.svg">
+                        <p>Localização:</p>
+                        <p>São Paulo - SP</p>
+                    </li>
+                </ul>
             </div>
+            <p>Se preferir, preencha o formulário ao lado que logo entraremos em contato.</p>
         </div>
-        <ul>
-            <img src="/public/assets/images/18-phone.svg">
-            <li>
-                <p>WhatsApp</p>
-                <p>(11) 99999-9999</p>
-            </li>
-            <img src="/public/assets/images/13-email.svg">
-            <li>
-                <p>E-mail</p>
-                <p>contato@techcare.com.br</p>
-            </li>
-            <img src="/public/assets/images/14-location.svg">
-            <li>
-                <p>Localização</p>
-                <p>São Paulo - SP</p>
-            </li>
-        </ul>
+        <form action="/send" method="POST">
+            <label for="name">Nome:</label><br>
+            <input type="text" id="name" name="nome" required><br><br>
+
+            <label for="email">E-mail:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="service">Serviço desejado:</label><br>
+            <input type="text" id="service" name="service" required><br><br>
+
+            <button type="submit">Enviar</button>
+        </form>
     </div>
 
     <footer>
-        <div>
-            <img src="/public/assets/images/03-monitor.svg">
+        <div class="footer-text">
+            <div class="logo">
+                <img src="/public/assets/images/03-monitor.svg">
+                <h1>TechCare</h1>
+            </div>
             <p>Manutenção e montagem de computadores com qualidade e confiança.</p>
+            <p>2026 TechCare. Todos os direitos reservados.</p>
         </div>
-        <div>
-            <p>Navegação</p>
+        <div class="footer-nav">
+            <p>Navegação:</p>
             <ul>
                 <li>
-                    <p>Início</p>
+                    <a href="#">Início</a>
                 </li>
                 <li>
-                    <p>Serviços</p>
+                    <a href="#">Serviços</a>
                 </li>
                 <li>
-                    <p>Sobre</p>
+                    <a href="#">Sobre</a>
                 </li>
                 <li>
-                    <p>Contato</p>
+                    <a href="#">Contato</a>
                 </li>
             </ul>
         </div>
-        <div>
-            <p>Redes Sociais</p>
-            <img src="/public/assets/images/15-instagram.svg">
-            <img src="/public/assets/images/16-facebook.svg">
-            <img src="/public/assets/images/17-youtube.svg">
+        <div class="footer-media">
+            <p>Redes Sociais:</p>
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="/public/assets/images/15-instagram.svg">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="/public/assets/images/16-facebook.svg">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="/public/assets/images/17-youtube.svg">
+                    </a>
+                </li>
+            </ul>
         </div>
     </footer>
 </body>
